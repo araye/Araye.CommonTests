@@ -127,7 +127,7 @@ namespace Araye.CommonTests.Security
         #region Araye Authorize Attrbites Tests
 
         [TestMethod]
-        public static AuthorizeAttribute Controller_Must_Have_ArayePermissionAttributee(Type testController)
+        public static AuthorizeAttribute Controller_Must_Have_ArayePermissionAttribute(Type testController)
         {
             var attributes = testController.GetCustomAttributes(typeof(ArayePermissionAttribute), true);
             Assert.IsTrue(attributes.Any(), $"No [ArayePermissionAttribute] found for controller {testController.FullName}");

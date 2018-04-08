@@ -135,14 +135,6 @@ namespace Araye.CommonTests.Security
         }
 
         [TestMethod]
-        public static AuthorizeAttribute Controller_Must_Have_ArayePermissionAttribute(Type testController)
-        {
-            var attributes = testController.GetCustomAttributes(typeof(ArayePermissionAttribute), true);
-            Assert.IsTrue(attributes.Any(), $"No [ArayePermissionAttribute] found for controller {testController.FullName}");
-            return attributes.Any() ? attributes[0] as AuthorizeAttribute : null;
-        }
-
-        [TestMethod]
         public static void Verify_All_ActionMethods_Have_ArayeActionPermission_Attribute(Type testController)
         {
 

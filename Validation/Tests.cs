@@ -11,7 +11,6 @@ namespace Araye.CommonTests.Validation
     /// <summary>
     /// collection of general test methods for data annotations attributes
     /// </summary>
-    [TestClass]
     public class Tests
     {
         /// <summary>

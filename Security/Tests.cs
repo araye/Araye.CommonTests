@@ -15,6 +15,7 @@ namespace Araye.CommonTests.Security
     /// <summary>
     /// collection of general test methods for security attributes
     /// </summary>
+    [TestClass]
     public class Tests
     {
         #region CSRF Tests
